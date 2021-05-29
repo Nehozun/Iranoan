@@ -1,4 +1,4 @@
-import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
 
 class CustomDocument extends Document {
@@ -11,9 +11,13 @@ class CustomDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" content="Iranoan official website." />
+          <title>Iranoan</title>
+          <link rel="icon" type="image/png" href="en/favicon.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP:wght@400;500&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-          <link href="//db.onlinewebfonts.com/c/ee5e0963d4f220cba32a5765cc4f9772?family=PingFang+HK" rel="stylesheet" type="text/css"/>
         </Head>
         <body className="bg-white">
           <Main />

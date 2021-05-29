@@ -1,10 +1,13 @@
 import React from "react";
 
-export const Footer: React.FC = () => {
+export const Footer: React.FC<{callback: any}> = (props) => {
+  const scrollTo = (value: string) => {
+    props.callback(value);
+  }
   return (
     <div className="footer bg-secondary py-10 md:py-16 xl:py-22 px-0 md:px-30 xl:px-52">
       <div className="menu flex items-center justify-center md:justify-start uppercase text-white font-notoSans text-sm lg:text-lg xl:text-2xl">
-        <a href="#" className="block md:inline-block px-3 py-3 cursor-pointer">Info</a>
+        <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={() => scrollTo('information')}>Info</a>
         <a href="#" className="block md:inline-block px-3 py-3 cursor-pointer">About us</a>
         <a href="#" className="block md:inline-block px-3 py-3 cursor-pointer">Services</a>
         <a href="#" className="block md:inline-block px-3 py-3 cursor-pointer">Contact</a>

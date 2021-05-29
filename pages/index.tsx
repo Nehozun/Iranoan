@@ -1,11 +1,10 @@
-import React, { useRef } from "react";
-
-import { Container, Header, Footer } from "@components";
+import { Container, Footer, Header } from "@components";
+import BusinessBanner from "@components/banner/business";
+import BusinessMobileBanner from "@components/banner/business-mobile";
 import BannerFirst from "@components/banner/first";
 import InformationBanner from "@components/banner/information";
 import BannerSecond from "@components/banner/second";
-import BusinessBanner from "@components/banner/business";
-import BusinessMobileBanner from "@components/banner/business-mobile";
+import React, { useRef } from "react";
 
 const Home: React.FC = () => {
   const infoRef = useRef<any>();
@@ -28,7 +27,7 @@ const Home: React.FC = () => {
       <div ref={infoRef} >
         <InformationBanner />
       </div>
-      <Footer />
+      <Footer callback={scrollTo} />
     </Container>
   );
 };

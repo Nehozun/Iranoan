@@ -7,7 +7,6 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
         notoSans: ['Noto Sans JP', 'sans-serif'],
         raleWay: ['Raleway', 'sans-serif'],
-        pingFang: ['PingFang HK', 'sans-serif']
       },
       colors: {
         primary: '#A506B7',
