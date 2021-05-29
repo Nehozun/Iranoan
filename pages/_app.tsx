@@ -8,4 +8,4 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <Component {...pageProps} />;
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;
