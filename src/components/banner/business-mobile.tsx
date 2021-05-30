@@ -6,7 +6,7 @@ const BusinessMobileBanner: React.FC = () => {
             business
         </div>
         <div className="business-mobile-item mb-7">
-            <div className="w-screen">
+            <div className="w-screen max-w-full">
                 <img src="/images/business-mobile-1.png" alt="business" className="w-full" />
             </div>
             <div className="card-mobile-info">
@@ -15,7 +15,7 @@ const BusinessMobileBanner: React.FC = () => {
             </div>
         </div>
         <div className="business-mobile-item">
-            <div className="w-screen">
+            <div className="w-screen max-w-full">
                 <img src="/images/business-mobile-2.png" alt="business" className="w-full" />
             </div>
             <div className="card-mobile-info">

@@ -1,6 +1,6 @@
 const BannerSecond: React.FC = () => {
     return <div className="block">
-        <div className="bg-contain hidden md:block bg-top-center bg-no-repeat h-banner-second-sm md:h-banner-second-md lg:h-banner-second-lg xl:h-banner-second-xl 2xl:h-banner-second-2xl" style={{ backgroundImage: "url('/images/banner-3.png')" }}>
+        <div className="bg-contain hidden md:block bg-top-center bg-no-repeat h-banner-second-sm md:h-banner-second-md lg:h-banner-second-lg xl:h-banner-second-xl 2xl:h-banner-second-2xl" style={{ backgroundImage: "url('/images/banner-3.png')", backgroundSize: '100%' }}>
         </div>
         <div className="block md:hidden text-center">
             <img src="/images/banner-4.png" alt="banner" className="w-full h-banner-second-sm" />
