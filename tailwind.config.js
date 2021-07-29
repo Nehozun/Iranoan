@@ -45,7 +45,8 @@ module.exports = {
       },
       borderColor: {
         primary: '#E1E1E1',
-        purple: '#A506B7'
+        purple: '#A506B7',
+        lm: '#AD7BC5'
       },
       maxWidth: {
         1200: '1200px',

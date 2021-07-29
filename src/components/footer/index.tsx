@@ -13,7 +13,7 @@ export const Footer: React.FC<{callback: any}> = (props) => {
         <a href="#" className="block md:inline-block px-3 py-3 cursor-pointer">Contact</a>
       </div>
       <div className="mx-auto flex flex-col items-center mt-10 md:mt-12 xl:mt-14 font-notoSans text-white">
-        <img src="/images/logo.png" alt="iranoan logo" className="w-24 h-26 lg:w-30 lg:h-32 2xl:w-42 2xl:h-44 object-contain" style={{ maxWidth: '168px' }} />
+        <img src="/images/logo-xl.png" alt="iranoan logo" className="w-40 h-12 md:w-48 md:h-14 object-contain filter invert" />
         <div className="footer-text-1 break-words mt-8 xl:mt-10 text-base 2xl:text-2xl text-center">
           <p className="mb-1">〒330-0856 さいたま市大宮区三橋2-800-18</p>
           <p>TEL : 048-729-7668</p>
