@@ -1,6 +1,6 @@
 const BannerSecond: React.FC = () => {
   return (
-    <div className="block">
+    <div className="block h-screen">
       <img
         src="/images/creative-all.svg"
         alt="banner"

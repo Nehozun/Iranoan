@@ -14,7 +14,7 @@ export const Header: React.FC<{callback: any}> = (props) => {
         <img src="/images/logo-xl.png" alt="iranoan logo" className="w-full object-contain max-h-full filter invert md:invert-0" style={{ maxWidth: '190px' }} />
       </a>
       <div className="flex md:hidden">
-        <button className="focus:ring-0 focus:outline-none invert" onClick={toggleMenu}>
+        <button className="focus:ring-0 focus:outline-none filter invert" onClick={toggleMenu}>
           <img className="block" src="/images/menu.png" width="30" height="30" alt="menu icon 1" />
         </button>
       </div>

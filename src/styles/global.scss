@@ -9,7 +9,7 @@ body {
 }
 
 .page-header {
-  box-shadow: 0px 4px 10px rgba(143, 143, 143, 0.05);
+  // box-shadow: 0px 4px 10px rgba(143, 143, 143, 0.05);
 }
 
 .business-card {
@@ -84,4 +84,20 @@ body {
   max-width: 615px;
   letter-spacing: 0.05rem;
   color: white;
+}
+
+.new-first-banner {
+  max-height: calc(100vh - 80px);
+}
+
+@media screen and (min-width: 1280px) {
+  .new-first-banner {
+    max-height: calc(100vh - 128px);
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .new-first-banner {
+    max-height: calc(100vh - 160px);
+  }
 }
