@@ -1,6 +1,6 @@
 const BannerSecond: React.FC = () => {
   return (
-    <div className="block h-screen">
+    <div className="block h-full min-h-screen" style={{maxHeight: '800px'}}>
       <img
         src="/images/creative-all.svg"
         alt="banner"

@@ -88,6 +88,8 @@ body {
 
 .new-first-banner {
   max-height: calc(100vh - 80px);
+  min-height: 800px;
+  max-width: 1920px;
 }
 
 @media screen and (min-width: 1280px) {
