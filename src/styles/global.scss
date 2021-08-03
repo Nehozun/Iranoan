@@ -88,8 +88,9 @@ body {
 
 .new-first-banner {
   max-height: calc(100vh - 80px);
-  min-height: 800px;
+  min-height: 600px;
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -101,5 +102,6 @@ body {
 @media screen and (min-width: 1536px) {
   .new-first-banner {
     max-height: calc(100vh - 160px);
+    min-height: 700px;
   }
 }
