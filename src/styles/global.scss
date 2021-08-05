@@ -105,3 +105,27 @@ body {
     min-height: 700px;
   }
 }
+
+
+@media screen and (min-width: 1920px) {
+  nav.page-header {
+    max-width: 2400px;
+    margin: 0 auto;
+  }
+  .new-first-banner {
+    max-width: 2100px;
+  }
+  .new-first-banner .banner-right > img {
+    transform: scale(1.2);
+  }
+
+  .new-first-banner .banner-left .last {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .new-first-banner .banner-left {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
