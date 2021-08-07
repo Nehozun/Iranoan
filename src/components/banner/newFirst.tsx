@@ -7,7 +7,7 @@ const NewBannerFirst: React.FC = () => {
         <div className="inline md:block mb-0 md:mb-10">変えられる</div>
         <div className="block text-xs xs:text-sm sm:text-base md:text-2xl font-normal max-w-xs mt-4 md:mt-0 last">life changes depending on their efforts</div>
       </div>
-      <div className="banner-right" style={{ maxWidth: "55%", minWidth: '375px' }}>
+      <div className="banner-right">
         <img
           src="/images/banner.png"
           alt="banner"
