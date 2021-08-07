@@ -111,6 +111,7 @@ body {
   .new-first-banner {
     max-width: unset;
     padding: 0 12% !important;
+    min-height: 1000px;
   }
 
   .new-first-banner .banner-right > img {
@@ -125,5 +126,11 @@ body {
   .new-first-banner .banner-left {
     font-size: 4rem;
     line-height: 4.25rem;
+  }
+}
+
+@media screen and (min-width: 2440px) {
+  .new-first-banner {
+    min-height: 1100px;
   }
 }
