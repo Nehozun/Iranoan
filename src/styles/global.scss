@@ -100,7 +100,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .banner-right {
-    max-width: 55%;
+    max-width: 60%;
   }
 }
 
@@ -149,9 +149,9 @@ body {
   }
 }
 
-@media screen and (min-height: 767px) {
+@media screen and (max-height: 769px) {
   .new-first-banner {
     min-height: 700px;
-    max-height: 800px !important;
+    max-height: 800px;
   }
 }
