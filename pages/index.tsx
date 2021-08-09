@@ -1,7 +1,6 @@
 import { Container, Footer, Header } from "@components";
 import BusinessBanner from "@components/banner/business";
 import BusinessMobileBanner from "@components/banner/business-mobile";
-import BannerFirst from "@components/banner/first";
 import InformationBanner from "@components/banner/information";
 import NewBannerFirst from "@components/banner/newFirst";
 import BannerSecond from "@components/banner/second";
