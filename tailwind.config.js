@@ -17,7 +17,8 @@ module.exports = {
       backgroundColor: {
         primary: '#A506B7',
         secondary: '#4F4F4F',
-        third: '#AD7BC5'
+        third: '#AD7BC5',
+        fourth: '#F1F1F1'
       },
       spacing: {
         13: '3.25rem',
@@ -36,7 +37,7 @@ module.exports = {
         'banner-second-md': '432px',
         'banner-second-lg': '633px',
         'banner-second-xl': '744px',
-        'banner-second-2xl': '1028px'
+        'banner-second-2xl': '1028px',
       },
       fontSize: {
         60: '60px',
@@ -53,8 +54,11 @@ module.exports = {
         overview: '#e3e3e3',
       },
       maxWidth: {
+        200: '200px',
         1200: '1200px',
-        1500: '1500px'
+        1500: '1500px',
+        'contact': '720px',
+
       },
     },
   },

@@ -189,6 +189,11 @@ a {
       color: white !important;
     }
   }
+  @media screen and (max-width: 768px) {
+    &:not(.ant-tabs-tab-active) {
+      background-color: #f8f8f8;
+    }
+  }
 }
 
 .ant-tabs-tab:hover {
@@ -230,4 +235,30 @@ a {
   .left {
     width: 85px;
   }
+}
+
+hr.contact-hr {
+  border: 3px solid #ad7bc5;
+  width: 100%;
+}
+
+hr.contact-hr-mobile {
+  border: 1px solid #ad7bc5;
+  width: 100%;
+}
+
+body .ant-input, .ant-textarea {
+  background: #fbfbfb;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: none !important;
+  height: 70px;
+}
+
+body .ant-input {
+  height: 42px;
 }
