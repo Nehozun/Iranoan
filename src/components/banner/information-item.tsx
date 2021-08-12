@@ -7,7 +7,7 @@ const InformationItem: React.FC<{ isLastItem?: boolean }> = (props) => {
         "cursor-pointer information-item flex flex-wrap items-center justify-between font-notoSans text-secondary text-base gap-x-6 gap-y-3 border-primary py-4 " +
         (props.isLastItem ? "border-none" : "border-b")
       }
-      onClick={() => router.push('/news')}
+      onClick={() => router.push('/news/1')}
     >
       <div className="first inline-flex items-center min-w-max gap-3">
         <span className="time">2021.06.01</span>

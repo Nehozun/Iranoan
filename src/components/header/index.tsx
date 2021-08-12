@@ -36,7 +36,7 @@ export const Header: React.FC<{ callback: any }> = (props) => {
       <div
         className={
           "w-full md:w-auto md:flex text-right text-white text-xl 2xl:text-2xl text-bold uppercase bg-transparent font-notoSans " +
-          (showDropdownMenu ? "absolute top-20 left-0" : "hidden")
+          (showDropdownMenu ? "absolute top-20 left-0 z-50 bg-secondary" : "hidden")
         }
       >
         <a

@@ -15,7 +15,7 @@ const About: NextPageLayout = () => {
       <div className="services-tabs mt-13">
         <Tabs defaultActiveKey="1">
           <TabPane tab="VISION" key="1">
-            <div className="mt-32">
+            <div className="my-5 md:my-32">
               <PageTab
                 title="Vision"
                 subTitle="Iranoanを1億人に知ってもらう"
@@ -35,11 +35,11 @@ const About: NextPageLayout = () => {
             </div>
           </TabPane>
           <TabPane tab="MESSAGE" key="2">
-            <div className="mt-32">
+            <div className="my-5 md:my-32">
               <h2 className="tab-title font-bold text-5xl text-third ">
                 Message
               </h2>
-              <div className="about-us-box px-5 py-12 md:px-8 md:py-14 lg:px-11 lg:py-16 xl:px-14 xl:py-18 mt-11 font-notoSans text-sm color-fourth">
+              <div className="about-us-box px-5 py-12 md:px-8 md:py-14 lg:px-11 lg:py-16 xl:px-14 xl:py-18 mt-11 font-notoSans text-sm text-fourth">
                 <p>
                   この度は、株式会社Iranoanのホームページをご覧頂き、誠にありがとうございます。
                 </p>
@@ -81,27 +81,27 @@ const About: NextPageLayout = () => {
             </div>
           </TabPane>
           <TabPane tab="OVERVIEW" key="3">
-            <div className="mt-32">
+            <div className="my-5 md:my-32">
               <h2 className="tab-title font-bold text-5xl text-third ">
                 Overview
               </h2>
-              <div className="about-us-box px-5 py-12 md:px-8 md:py-14 lg:px-11 lg:py-16 xl:px-14 xl:py-18 mt-11 font-notoSans text-sm color-fourth">
+              <div className="about-us-box px-5 py-12 md:px-8 md:py-14 lg:px-11 lg:py-16 xl:px-14 xl:py-18 mt-11 font-notoSans text-sm text-fourth">
                 <div className="flex flex-wrap gap-x-5 md:gap-x-10">
                   <div className="block-1 flex-1">
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">商号</div>
+                      <div className="left text-secondary">商号</div>
                       <div className="right flex-1">株式会社Iranoan</div>
                     </div>
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">設立</div>
+                      <div className="left text-secondary">設立</div>
                       <div className="right flex-1">2019年12月18日</div>
                     </div>
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">資本金</div>
+                      <div className="left text-secondary">資本金</div>
                       <div className="right flex-1">5,000千円</div>
                     </div>
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">本社所在地</div>
+                      <div className="left text-secondary">本社所在地</div>
                       <div className="right flex-1">
                         <div>〒330-0856 </div>
                         <div>埼玉県さいたま市大宮区三橋</div>
@@ -109,17 +109,17 @@ const About: NextPageLayout = () => {
                       </div>
                     </div>
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">代表者</div>
+                      <div className="left text-secondary">代表者</div>
                       <div className="right flex-1">鈴木 直</div>
                     </div>
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">従業員数</div>
+                      <div className="left text-secondary">従業員数</div>
                       <div className="right flex-1">6名</div>
                     </div>
                   </div>
                   <div className="block-1 flex-1">
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">事業内容</div>
+                      <div className="left text-secondary">事業内容</div>
                       <div className="right flex-1">
                         <div>古物営業に基づく古物営業</div>
                         <div>玩具、家電、OA機器等の買い取り及び販売</div>
@@ -134,7 +134,7 @@ const About: NextPageLayout = () => {
                       </div>
                     </div>
                     <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
-                      <div className="left color-secondary">グループ会社</div>
+                      <div className="left text-secondary">グループ会社</div>
                       <div className="right flex-1">
                         <div>■ベトナム法人</div>
                         <div>Wanana : Iranoan(株式保有100％)</div>

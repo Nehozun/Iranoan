@@ -15,7 +15,7 @@ const Services: NextPageLayout = () => {
       <div className="services-tabs mt-13">
         <Tabs defaultActiveKey="1">
           <TabPane tab="Yu-Gi-Oh ! MARKETING" key="1">
-            <div className="mt-32">
+            <div className="my-5 md:my-32">
               <PageTab
                 title="Yu-Gi-Oh! Shopping"
                 subTitle="遊戯王販売店Nari"
@@ -30,7 +30,7 @@ const Services: NextPageLayout = () => {
             </div>
           </TabPane>
           <TabPane tab="MOBILE APP DEVELOPMENT" key="2">
-            <div className="mt-32">
+            <div className="my-5 md:my-32">
               <PageTab
                 title="Mobile App Development"
                 subTitle="Team Wanana"
@@ -52,7 +52,7 @@ const Services: NextPageLayout = () => {
             </div>
           </TabPane>
           <TabPane tab="CLOTHING FASHION" key="3">
-            <div className="mt-32">
+            <div className="my-5 md:my-32">
               <PageTab
                 title="Clothing Fashion"
                 subTitle="Ruly"
