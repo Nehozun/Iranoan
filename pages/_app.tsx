@@ -1,12 +1,16 @@
-import React from "react";
-import { AppProps } from "next/app";
-import "tailwindcss/tailwind.css";
 import "@styles/global.scss";
-import Head from "next/head";
+import "antd/dist/antd.css";
 import { DefaultSeo } from "next-seo";
 import { seoConfig } from "next-seo.config";
+import { AppProps } from "next/app";
+import Head from "next/head";
+import React from "react";
+import "tailwindcss/tailwind.css";
+
+const Empty: React.FC = ({ children }) => <>{children}</>;
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+  const Layout = (Component as any).Layout || Empty;
   return (
     <>
       <Head>
@@ -23,7 +27,9 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       </Head>
       <>
         <DefaultSeo {...seoConfig} />
-        <Component {...pageProps} />;
+        <Layout pageProps={pageProps}>
+          <Component {...pageProps} />
+        </Layout>
       </>
     </>
   );
