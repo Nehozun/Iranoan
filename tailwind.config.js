@@ -10,11 +10,14 @@ module.exports = {
       },
       colors: {
         primary: '#A506B7',
-        secondary: '#666666'
+        secondary: '#666666',
+        third: '#AD7BC5',
+        fourth: '#333333'
       },
       backgroundColor: {
         primary: '#A506B7',
-        secondary: '#4F4F4F'
+        secondary: '#4F4F4F',
+        third: '#AD7BC5'
       },
       spacing: {
         13: '3.25rem',
@@ -46,7 +49,8 @@ module.exports = {
       borderColor: {
         primary: '#E1E1E1',
         purple: '#A506B7',
-        lm: '#AD7BC5'
+        lm: '#AD7BC5',
+        overview: '#e3e3e3',
       },
       maxWidth: {
         1200: '1200px',

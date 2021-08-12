@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "antd": "^4.16.11",
     "next": "10.2.0",
     "next-compose-plugins": "^2.2.1",
     "next-i18next": "^7.0.1",
