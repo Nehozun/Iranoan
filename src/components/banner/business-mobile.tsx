@@ -5,9 +5,10 @@ import BusinessCard from "./business-card";
 const BusinessMobileBanner: React.FC = () => {
   return (
     <div className="business-banner">
-      <div className="title my-10 md:my-12 lg:my-14 xl:my-16 2xl:my-18 uppercase text-4xl lg:text-60 2xl:text-80 text-black font-raleWay text-center font-medium">
+      <div className="title mt-10 uppercase text-4xl lg:text-60 2xl:text-80 text-black font-raleWay text-center font-medium">
         business
       </div>
+      <div className="mx-auto h-8 mt-3 bsn-matches"></div>
       <div className="business-mobile-item mb-7">
         <div className="w-screen max-w-full">
           <img
