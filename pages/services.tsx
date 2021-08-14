@@ -21,13 +21,13 @@ const Services: NextPageLayout = () => {
   }
   return (
     <div className="service-wrapper">
-      <h1 className="page-title font-raleWay uppercase text-6xl font-bold w-full">
+      <h1 className="page-title font-raleWay uppercase text-2xl md:text-6xl font-bold w-full">
         service
-        <span className="ml-10 font-notoSans font-bold text-xl text-secondary">
+        <span className="ml-10 font-notoSans font-bold text-sm md:text-xl text-secondary">
           サービス
         </span>
       </h1>
-      <div className="services-tabs mt-13">
+      <div className="services-tabs mt-9 md:mt-13">
         <div className="ira-tabs inline-flex flex-nowrap gap-x-5">
           <button className={'ira-tab ' + (currentTab === 1 ? 'ira-tab-active' : '')} onClick={() => onChangeTab(1)}>
             Yu-Gi-Oh ! MARKETING

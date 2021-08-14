@@ -9,13 +9,13 @@ const { TabPane } = Tabs;
 const News: NextPageLayout = () => {
   return (
     <div className="service-wrapper">
-      <h1 className="page-title font-raleWay uppercase text-6xl font-bold w-full">
+      <h1 className="page-title font-raleWay uppercase text-2xl md:text-6xl font-bold w-full">
         news
-        <span className="ml-10 font-notoSans font-bold text-xl text-secondary">
+        <span className="ml-10 font-notoSans font-bold text-sm md:text-xl text-secondary">
           ニュース
         </span>
       </h1>
-      <div className="services-tabs mt-13">
+      <div className="services-tabs mt-9 md:mt-13">
         <Tabs defaultActiveKey="1">
           <TabPane tab="ALL" key="1">
             <div className="my-5 md:my-11">
