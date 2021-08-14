@@ -7,7 +7,7 @@ const PageTab: React.FC<{
   return (
     <div className="page-tab flex items-center justify-between font-notoSans gap-8 flex-wrap-reverse">
       <div className="flex flex-col">
-        <h2 className="tab-title font-bold text-5xl text-third hidden md:block">
+        <h2 className="tab-title font-bold text-2xl md:text-5xl text-third hidden md:block">
           {props.title}
         </h2>
         <h3 className="tab-subtitle text-2xl text-black mt-3 mb-5">
@@ -16,7 +16,7 @@ const PageTab: React.FC<{
         <div className="tab-content text-secondary">{props.content}</div>
       </div>
       <img src={props.imageUrl} alt="tab" className="tab-image" />
-      <h2 className="tab-title font-bold text-5xl text-third block md:hidden">
+      <h2 className="tab-title font-bold text-2xl md:text-5xl text-third block md:hidden">
         {props.title}
       </h2>
     </div>

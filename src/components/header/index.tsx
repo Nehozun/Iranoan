@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
-export const Header: React.FC<{ callback: any }> = (props) => {
+export const Header: React.FC<{ callback: any; isHome?: boolean }> = (props) => {
   const [showDropdownMenu, setShowDropdownMenu] = useState<boolean>(false);
   function toggleMenu() {
     setShowDropdownMenu(!showDropdownMenu);
@@ -39,24 +39,28 @@ export const Header: React.FC<{ callback: any }> = (props) => {
           (showDropdownMenu ? "absolute top-20 left-0 z-50 bg-secondary" : "hidden")
         }
       >
-        <a
+        {props.isHome ? <a
           className="block md:inline-block px-3 py-3 cursor-pointer"
           onClick={() => scrollTo("information")}
         >
           Info
-        </a>
+        </a>:  <Link href="/">
+          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
+            Info
+          </a>
+        </Link>}
         <Link href="/about">
-          <a className="block md:inline-block px-3 py-3 cursor-pointer">
+          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
             About us
           </a>
         </Link>
         <Link href="/services">
-          <a className="block md:inline-block px-3 py-3 cursor-pointer">
+          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
             Services
           </a>
         </Link>
         <Link href="/contact">
-          <a className="block md:inline-block px-3 py-3 cursor-pointer">
+          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
             Contact
           </a>
         </Link>

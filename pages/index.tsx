@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <div className="head-wrapper">
-        <Header callback={scrollTo} />
+        <Header callback={scrollTo} isHome={true}/>
         <NewBannerFirst />
         <BannerSecond />
       </div>
@@ -29,7 +29,7 @@ const Home: React.FC = () => {
       <div ref={infoRef}>
         <InformationBanner />
       </div>
-      <Footer callback={scrollTo} />
+      <Footer callback={scrollTo} isHome={true}/>
     </Container>
   );
 };
