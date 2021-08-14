@@ -305,6 +305,12 @@ body .ant-input {
   100%{opacity:1;right:0;}
 }
 
+@keyframes appear{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+
 .img-3 {
   animation: ttb ease-in-out 1.6s;
 }
@@ -315,4 +321,8 @@ body .ant-input {
 
 .img-2 {
   animation: rtl ease-in-out 1.2s;
+}
+
+.banner-appear {
+  animation: appear ease-in-out 0.9s;
 }
