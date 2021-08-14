@@ -6,6 +6,7 @@ body {
     "Helvetica Neue", Arial, "Noto Sans", "PingFang HK", "Liberation Sans",
     sans-serif, "Montserrat", "Raleway", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
+  scroll-behavior: smooth;
 }
 
 .page-header {
@@ -169,7 +170,7 @@ a {
   display: none;
 }
 
-.main-content .ant-tabs-tab {
+.ira-tab {
   font-size: 18px;
   font-family: "Noto Sans JP";
   font-weight: bold;
@@ -183,14 +184,16 @@ a {
   border-radius: 8px;
   padding: 0 20px;
   min-width: none;
+  display: inline-block;
   &-active {
     background: #ad7bc5;
-    .ant-tabs-tab-btn {
-      color: white !important;
-    }
+    color: white;
   }
   @media screen and (max-width: 768px) {
     &:not(.ant-tabs-tab-active) {
+      background-color: #f8f8f8;
+    }
+    .ira-tab:not(.ira-tab-active) {
       background-color: #f8f8f8;
     }
   }
@@ -207,7 +210,7 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .main-content .ant-tabs-tab {
+  .ira-tab {
     min-width: fit-content;
   }
 }
@@ -247,7 +250,8 @@ hr.contact-hr-mobile {
   width: 100%;
 }
 
-body .ant-input, .ant-textarea {
+body .ant-input,
+.ant-textarea {
   background: #fbfbfb;
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
