@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
-export const Header: React.FC<{ callback: any; isHome?: boolean }> = (props) => {
+export const Header: React.FC<{ callback: any; isHome?: boolean }> = (
+  props
+) => {
   const [showDropdownMenu, setShowDropdownMenu] = useState<boolean>(false);
   function toggleMenu() {
     setShowDropdownMenu(!showDropdownMenu);
@@ -36,31 +38,49 @@ export const Header: React.FC<{ callback: any; isHome?: boolean }> = (props) => 
       <div
         className={
           "w-full md:w-auto md:flex text-right text-white text-xl 2xl:text-2xl text-bold uppercase bg-transparent font-notoSans " +
-          (showDropdownMenu ? "absolute top-20 left-0 z-50 bg-secondary" : "hidden")
+          (showDropdownMenu
+            ? "absolute top-20 left-0 z-50 bg-secondary"
+            : "hidden")
         }
       >
-        {props.isHome ? <a
-          className="block md:inline-block px-3 py-3 cursor-pointer"
-          onClick={() => scrollTo("information")}
-        >
-          Info
-        </a>:  <Link href="/">
-          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
+        {props.isHome ? (
+          <a
+            className="block md:inline-block px-3 py-3 cursor-pointer"
+            onClick={() => scrollTo("information")}
+          >
             Info
           </a>
-        </Link>}
+        ) : (
+          <Link href="/">
+            <a
+              className="block md:inline-block px-3 py-3 cursor-pointer"
+              onClick={showDropdownMenu ? toggleMenu : null}
+            >
+              Info
+            </a>
+          </Link>
+        )}
         <Link href="/about">
-          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
+          <a
+            className="block md:inline-block px-3 py-3 cursor-pointer"
+            onClick={showDropdownMenu ? toggleMenu : null}
+          >
             About us
           </a>
         </Link>
         <Link href="/services">
-          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
+          <a
+            className="block md:inline-block px-3 py-3 cursor-pointer"
+            onClick={showDropdownMenu ? toggleMenu : null}
+          >
             Services
           </a>
         </Link>
         <Link href="/contact">
-          <a className="block md:inline-block px-3 py-3 cursor-pointer" onClick={toggleMenu}>
+          <a
+            className="block md:inline-block px-3 py-3 cursor-pointer"
+            onClick={showDropdownMenu ? toggleMenu : null}
+          >
             Contact
           </a>
         </Link>
