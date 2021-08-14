@@ -10,7 +10,7 @@ const Contact: NextPageLayout = () => {
       <h1 className="text-2xl md:text-6xl font-raleWay uppercase text-center">
         Contact
       </h1>
-      <div className="mt-8 text-secondary text-xl">
+      <div className="mt-8 text-secondary text-base md:text-xl">
         Iranoanにお問い合わせをします。
       </div>
       <hr className="contact-hr-mobile md:contact-hr mt-4 mb-4 md:mb-10" />
