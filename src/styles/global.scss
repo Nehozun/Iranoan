@@ -285,3 +285,34 @@ body .ant-input {
 .form-item.flex-1 {
   min-width: 300px;
 }
+
+.centered-absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes ttb{
+  0%{opacity:0;top:-200px;}
+  100%{opacity:1;top:0;}
+}
+
+@keyframes rtl{
+  0%{opacity:0;right:200px;}
+  100%{opacity:1;right:0;}
+}
+
+.img-3 {
+  animation: ttb ease-in-out 1.6s;
+}
+
+.img-1 {
+  animation: rtl ease-in-out 0.8s;
+}
+
+.img-2 {
+  animation: rtl ease-in-out 1.2s;
+}
