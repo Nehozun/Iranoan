@@ -4,7 +4,7 @@ const NewBannerFirst: React.FC = () => {
       className="new-first-banner gap-x-10 pb-9 md:pb-12 2xl:pb-20 flex flex-wrap justify-between items-center h-full lg:h-screen font-notoSans"
       style={{ paddingLeft: "10%", paddingRight: "5%" }}
     >
-      <div className="banner-left text-white font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
+      <div className="banner-left text-white font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl banner-appear">
         <div className="block mb-3 md:mb-10">人生は、</div>
         <div className="inline md:block mb-0 md:mb-10">努力次第で </div>
         <div className="inline md:block mb-0 md:mb-10">変えられる</div>
