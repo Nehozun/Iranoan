@@ -1,4 +1,5 @@
 import "@styles/global.scss";
+import "antd/dist/antd.css";
 import { DefaultSeo } from "next-seo";
 import { seoConfig } from "next-seo.config";
 import { AppProps } from "next/app";
