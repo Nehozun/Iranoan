@@ -13,7 +13,7 @@ const PageTab: React.FC<{
         <h3 className="tab-subtitle text-2xl text-black mt-3 mb-5">
           {props.subTitle}
         </h3>
-        <div className="tab-content text-secondary">{props.content}</div>
+        <div className="tab-content text-secondary text-base md:text-lg">{props.content}</div>
       </div>
       <img src={props.imageUrl} alt="tab" className="tab-image" />
       <h2 className="tab-title font-bold text-2xl md:text-5xl text-third block md:hidden">
