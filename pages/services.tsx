@@ -18,7 +18,7 @@ const Services: NextPageLayout = () => {
     } else {
       tabRef3.current?.scrollIntoView();
     }
-  }
+  };
   return (
     <div className="service-wrapper">
       <h1 className="page-title font-raleWay uppercase text-2xl md:text-6xl font-bold w-full">
@@ -29,11 +29,24 @@ const Services: NextPageLayout = () => {
       </h1>
       <div className="services-tabs mt-9 md:mt-13">
         <div className="ira-tabs inline-flex flex-nowrap gap-x-5">
-          <button className={'ira-tab ' + (currentTab === 1 ? 'ira-tab-active' : '')} onClick={() => onChangeTab(1)}>
+          <button
+            className={"ira-tab " + (currentTab === 1 ? "ira-tab-active" : "")}
+            onClick={() => onChangeTab(1)}
+          >
             Yu-Gi-Oh ! MARKETING
           </button>
-          <button className={'ira-tab ' + (currentTab === 2 ? 'ira-tab-active' : '')} onClick={() => onChangeTab(2)}>MOBILE APP DEVELOPMENT</button>
-          <button className={'ira-tab ' + (currentTab === 3 ? 'ira-tab-active' : '')} onClick={() => onChangeTab(3)}>CLOTHING FASHION</button>
+          <button
+            className={"ira-tab " + (currentTab === 2 ? "ira-tab-active" : "")}
+            onClick={() => onChangeTab(2)}
+          >
+            MOBILE APP DEVELOPMENT
+          </button>
+          <button
+            className={"ira-tab " + (currentTab === 3 ? "ira-tab-active" : "")}
+            onClick={() => onChangeTab(3)}
+          >
+            CLOTHING FASHION
+          </button>
         </div>
         <div className="my-5 md:my-32" ref={tabRef1}>
           <PageTab
@@ -41,8 +54,25 @@ const Services: NextPageLayout = () => {
             subTitle="遊戯王販売店Nari"
             content={
               <>
-                <p>インターネット販売で24h販売可。</p>
-                <p>高額買取と豊富な品揃えで安心に購入いただけます。</p>
+                <p>
+                  コレクターに人気の遊戯王オリパを専門で扱う通販ショップNari。
+                </p>
+                <p>
+                  人気のカードはもちろん、コレクター向けアイテムまでそろう充実の品揃え。
+                </p>
+                <p>
+                  ほかの店で見つけられなかったお探しの遊戯王カードを24時間いつでも自由に見つけられるかもしれません。
+                </p>
+                <p>
+                  また、Nariでは遊ばなくなって不要となった遊戯王カードの買取もおこなっています。
+                </p>
+                <p>
+                  郵送で査定がおこなえるので、ご自宅にいながら不要になった遊戯王カードの査定や高価買取が出来ると人気です。
+                </p>
+                <p>
+                  査定は無料なので、売るかどうしようか迷っているという方や
+                  遊戯王カードの買取業者選びで悩んでいる方は、お気軽にNariの宅配査定をご利用ください。
+                </p>
               </>
             }
             imageUrl="/images/shopping.png"
@@ -55,12 +85,20 @@ const Services: NextPageLayout = () => {
             content={
               <>
                 <p>
-                  ツール系アプリの開発を得意とし、作業負担の軽減・効率化を目指します。
+                  アプリをリリースしたいという方にとって、ネックとなりやすいのが開発の難しさと手間です。
                 </p>
                 <p>
-                  さらに当社のアプリを利用して、楽しいと感じて頂けるように何度も議論を重ね、
+                  ツール系アプリの開発が得意な私たちは、こうしたアプリ開発の作業負担の軽減や効率化を可能にする支援をおこなっています
                 </p>
-                <p>利用者様にわかりやすく使いやすいデザインを提供します。</p>
+                <p>
+                  アプリ開発は初めて、専門的な知識がないからモバイルアプリの作成なんて無理と思っている方はあきらめる前に、まず、私達にご相談ください。
+                </p>
+                <p>
+                  アプリを使う目的やユーザーのことを考え、何度も議論を重ねて、使いやすいデザインを追求、分かりやすく利便性の高いアプリの開発を支援しています。
+                </p>
+                <p>
+                  また、当社でアプリ開発を支援させていただいたお客様から、モバイルアプリを開発してから大幅に売り上げアップした、経費削減が出来た、業務効率が上がったというお喜びの声も続々と届いております。
+                </p>
               </>
             }
             imageUrl="/images/mobile-app-development.png"
@@ -72,9 +110,20 @@ const Services: NextPageLayout = () => {
             subTitle="Ruly"
             content={
               <>
-                <p>“mode casual selectshop”</p>
-                <p>洗練された大人なmodeスタイルを提案。</p>
-                <p>歳を重ねても自由にお洒落を楽しみたいあなたに....</p>
+                <p>洋服は、ただ単に着るだけのものではありません。</p>
+                <p>
+                  洋服は、着る人の悩みを解決したり、こんな風になりたいという希望をかなえてくれる魔法のアイテムです。
+                </p>
+                <p>
+                  Rulyでは、
+                  白と黒の世界観で世代を問わず愛されるモードスタイルをもっと身近に…
+                </p>
+                <p>
+                  をスローガンに掲げ、洗練されたモードスタイルを皆様に提供いたします。
+                </p>
+                <p>
+                  Rulyは、通信販売・オンラインショップで販売しておりますので、洋服屋へ行く時間がない、子どもがいるからゆっくりと落ち着いて買い物できないという方も当店で、おうちお買い物時間をじっくりとお楽しみ下さい。
+                </p>
               </>
             }
             imageUrl="/images/Fashion.png"

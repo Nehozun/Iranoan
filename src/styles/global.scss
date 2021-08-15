@@ -326,3 +326,27 @@ body .ant-input {
 .banner-appear {
   animation: appear ease-in-out 0.9s;
 }
+
+.tab-image.big-img {
+  width: 410px;
+  max-width: 100%;
+}
+
+.text-container {
+  @media screen and (min-width:769px) {
+    max-width: calc(100% - 400px);
+    &.big-img-container {
+      max-width: calc(100% - 500px);
+    }
+  }
+}
+
+.animation-item {
+  max-height: 500px;
+  @media screen and (min-width: 1439px) {
+    max-height: 700px;
+  }
+  @media screen and (min-width: 1919px) {
+    max-height: 900px;
+  }
+}
