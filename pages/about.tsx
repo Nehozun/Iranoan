@@ -46,10 +46,11 @@ const About: NextPageLayout = () => {
             OVERVIEW
           </button>
         </div>
-        <div className="my-5 md:my-32" ref={tabRef1}>
+        <div className="my-5 md:my-16" ref={tabRef1}>
           <PageTab
             title="Vision"
             subTitle="Iranoanを1億人に知ってもらう"
+            isBigImage
             content={
               <>
                 <p>誰もが知る会社になるためにサービスの質を常に探求し、</p>
@@ -64,7 +65,7 @@ const About: NextPageLayout = () => {
             imageUrl="/images/about-us-vision.png"
           />
         </div>
-        <div className="my-5 md:my-32" ref={tabRef2}>
+        <div className="my-5 md:my-16" ref={tabRef2}>
           <h2 className="tab-title font-bold text-5xl text-third ">Message</h2>
           <div className="about-us-box px-5 py-12 md:px-8 md:py-14 lg:px-11 lg:py-16 xl:px-14 xl:py-18 mt-11 font-notoSans text-sm text-fourth">
             <p>
@@ -106,7 +107,7 @@ const About: NextPageLayout = () => {
             </div>
           </div>
         </div>
-        <div className="my-5 md:my-32" ref={tabRef3}>
+        <div className="my-5 md:my-16" ref={tabRef3}>
           <h2 className="tab-title font-bold text-5xl text-third ">Overview</h2>
           <div className="about-us-box px-5 py-12 md:px-8 md:py-14 lg:px-11 lg:py-16 xl:px-14 xl:py-18 mt-11 font-notoSans text-sm text-fourth">
             <div className="flex flex-wrap gap-x-5 md:gap-x-10">
