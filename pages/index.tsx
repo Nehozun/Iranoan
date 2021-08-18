@@ -5,6 +5,7 @@ import InformationBanner from "@components/banner/information";
 import NewBannerFirst from "@components/banner/newFirst";
 import BannerSecond from "@components/banner/second";
 import React, { useRef } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Home: React.FC = () => {
   const infoRef = useRef<any>();
@@ -16,9 +17,11 @@ const Home: React.FC = () => {
   return (
     <Container>
       <div className="head-wrapper">
-        <Header callback={scrollTo} isHome={true}/>
+        <Header callback={scrollTo} isHome={true} />
         <NewBannerFirst />
-        <BannerSecond />
+        <ScrollAnimation animateIn="bounceInUp" duration={0.4}>
+          <BannerSecond />
+        </ScrollAnimation>
       </div>
       <div className="toggle-business-banner desktop">
         <BusinessBanner />
@@ -29,7 +32,7 @@ const Home: React.FC = () => {
       <div ref={infoRef}>
         <InformationBanner />
       </div>
-      <Footer callback={scrollTo} isHome={true}/>
+      <Footer callback={scrollTo} isHome={true} />
     </Container>
   );
 };

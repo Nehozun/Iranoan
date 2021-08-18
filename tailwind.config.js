@@ -41,7 +41,9 @@ module.exports = {
       },
       fontSize: {
         60: '60px',
-        80: '80px'
+        80: '80px',
+        '28px': '28px',
+        '23px': '23px',
       },
       borderRadius: {
         table: '40px',
@@ -58,8 +60,12 @@ module.exports = {
         1200: '1200px',
         1500: '1500px',
         'contact': '720px',
-
       },
+      screens: {
+        '3xl': '1600px',
+        '4xl': '1920px',
+        '5xl': '2160px',
+      }
     },
   },
   variants: {

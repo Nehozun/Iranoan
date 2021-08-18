@@ -194,6 +194,7 @@ a {
   color: black;
   border-radius: 8px;
   justify-content: center;
+  min-width: 100px;
   &-active {
     .ant-tabs-tab-btn {
       color: white !important;
@@ -348,5 +349,47 @@ body .ant-input {
   }
   @media screen and (min-width: 1919px) {
     max-height: 900px;
+  }
+}
+
+.banner2 {
+  min-height: 200px;
+  .image-1 {
+    animation: ttb ease-in-out 0.4s;
+  }
+  .image-2 {
+    animation: ttb ease-in-out 0.8s;
+  }
+  .image-3 {
+    animation: ttb ease-in-out 1.2s;
+  }
+  .image-4 {
+    animation: ttb ease-in-out 1.6s;
+  }
+  @media screen and (min-width:1024px) {
+    min-height: 350px;
+  }
+  @media screen and (min-width:1440px) {
+    min-height: 450px;
+  }
+  @media screen and (min-width:1600px) {
+    min-height: 550px;
+  }
+  @media screen and (min-width:1920px) {
+    min-height: 600px;
+  }
+  @media screen and (min-width:2560px) {
+    min-height: 650px;
+  }
+}
+
+@keyframes vectorToRight {
+  0%{transform: translateX(0px)}
+  100%{transform: translateX(20px)}
+}
+
+.information-item:hover {
+  .vector-btn {
+    animation: vectorToRight linear 0.4s;
   }
 }

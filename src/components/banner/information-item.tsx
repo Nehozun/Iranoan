@@ -23,7 +23,7 @@ const InformationItem: React.FC<{ isLastItem?: boolean }> = (props) => {
           座席管理システム「せきとりくん」が北海道建設新聞にて紹介されました
         </div>
         <button
-          className="border-none bg-transparent outline-none flex-shrink-0"
+          className="border-none bg-transparent outline-none flex-shrink-0 vector-btn"
           type="button"
         >
           <img src="/images/vector.png" alt="vector" width="33" height="23" />
