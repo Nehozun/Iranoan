@@ -19,9 +19,7 @@ const Home: React.FC = () => {
       <div className="head-wrapper">
         <Header callback={scrollTo} isHome={true} />
         <NewBannerFirst />
-        <ScrollAnimation animateIn="bounceInUp" duration={0.4}>
-          <BannerSecond />
-        </ScrollAnimation>
+        <BannerSecond />
       </div>
       <div className="toggle-business-banner desktop">
         <BusinessBanner />

@@ -302,7 +302,7 @@ body .ant-input {
 }
 
 @keyframes rtl{
-  0%{opacity:0;right:200px;}
+  0%{opacity:0;right:-200px;}
   100%{opacity:1;right:0;}
 }
 
@@ -313,15 +313,15 @@ body .ant-input {
 
 
 .img-3 {
-  animation: ttb ease-in-out 1.6s;
+  animation: ttb ease-in-out 1.2s 0.6s;
 }
 
 .img-1 {
-  animation: rtl ease-in-out 0.8s;
+  animation: rtl ease-in-out 0.4s 0s;
 }
 
 .img-2 {
-  animation: rtl ease-in-out 1.2s;
+  animation: rtl ease-in-out 0.8s 0.3s;
 }
 
 .banner-appear {

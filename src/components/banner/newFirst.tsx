@@ -1,3 +1,5 @@
+import ScrollAnimation from "react-animate-on-scroll";
+
 const NewBannerFirst: React.FC = () => {
   return (
     <div
@@ -6,9 +8,7 @@ const NewBannerFirst: React.FC = () => {
     >
       <div className="banner-left text-white font-bold text-base md:text-4xl banner-appear">
         <div className="block mb-3 md:mb-10">毎日に、</div>
-        <div className="inline md:block mb-0 md:mb-10 ml-0 md:ml-8">
-          刺激と
-        </div>
+        <div className="inline md:block mb-0 md:mb-10 ml-0 md:ml-8">刺激と</div>
         <div className="inline md:block mb-0 md:mb-10 ml-0 md:ml-16">
           遊びを
         </div>
@@ -27,30 +27,28 @@ const NewBannerFirst: React.FC = () => {
           className="centered-absolute animation-item"
           style={{ minWidth: "300px", minHeight: "300px" }}
         >
-          <img
-            src="/svg/1-isometric.svg"
-            alt="banner"
-            className="absolute top-0 left-0  object-contain img-1"
-            style={{ transitionDelay: ".8s" }}
-          />
-          <img
-            src="/svg/2-isometric.svg"
-            alt="banner"
-            className="absolute top-0 left-0 object-contain img-2"
-            style={{ transitionDelay: "1.6s" }}
-          />
-          <img
-            src="/svg/3-isometric.svg"
-            alt="banner"
-            className="absolute top-0 left-0 object-contain img-3"
-            style={{ transitionDelay: "2.4s" }}
-          />
+          <ScrollAnimation animateIn="bounceInUp" animateOnce delay={500} duration={2}>
+            <img
+              src="/svg/1-isometric.svg"
+              alt="banner"
+              className="absolute top-0 left-0  object-contain"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOnce delay={100} duration={2}>
+            <img
+              src="/svg/2-isometric.svg"
+              alt="banner"
+              className="absolute top-0 left-0 object-contain"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="bounceInDown" animateOnce delay={500} duration={2}>
+            <img
+              src="/svg/3-isometric.svg"
+              alt="banner"
+              className="absolute top-0 left-0 object-contain"
+            />
+          </ScrollAnimation>
         </div>
-        {/* <img
-          src="/images/banner.png"
-          alt="banner"
-          className="w-full object-contain"
-        /> */}
       </div>
     </div>
   );
