@@ -15,7 +15,7 @@ const NewBannerFirst: React.FC = () => {
         <div className="block text-xs xs:text-sm sm:text-base md:text-2xl max-w-xs mt-4 md:mt-0 last font-light font-raleWay">
           今、私たちに
         </div>
-        <div className="block text-xs md:text-2xl max-w-xs ml-4 md:mt-0 last font-light font-raleWay">
+        <div className="block text-xs md:text-2xl max-w-xs ml-4 md:mt-0 last font-light font-raleWay min-w-max">
           何 ができるのかを考える
         </div>
       </div>
