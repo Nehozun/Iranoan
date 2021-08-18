@@ -12,4 +12,6 @@ COPY . /iranoan/
 
 RUN yarn build
 
-CMD ["yarn", "start"]
+# CMD ["yarn", "start"]
+
+CMD ["node_modules/.bin/next", "dev"]
