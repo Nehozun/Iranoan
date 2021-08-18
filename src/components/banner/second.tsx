@@ -10,28 +10,28 @@ const BannerSecond: React.FC = () => {
           className="relative"
           style={{ width: "60vw", maxWidth: "1200px", minWidth: "375px" }}
         >
-          <ScrollAnimation delay={100} animateIn="bounceInDown" animateOnce>
+          <ScrollAnimation animateIn="bounceInDown" animateOnce>
             <img
               src="/svg/01.svg"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
-          <ScrollAnimation delay={100} animateIn="bounceInDown" animateOnce>
+          <ScrollAnimation animateIn="bounceInDown" animateOnce>
             <img
               src="/svg/02.svg"
               alt="banner"
               className="absolute top-0 left-0 object-contain "
             />
           </ScrollAnimation>
-          <ScrollAnimation delay={200} animateIn="bounceInUp" animateOnce>
+          <ScrollAnimation animateIn="bounceInDown" animateOnce delay={100}>
             <img
               src="/svg/03.svg"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
-          <ScrollAnimation delay={300} animateIn="bounceInUp" animateOnce>
+          <ScrollAnimation animateIn="bounceInDown" animateOnce delay={100}>
             <img
               src="/svg/04.svg"
               alt="banner"
@@ -47,19 +47,19 @@ const BannerSecond: React.FC = () => {
           </ScrollAnimation>
         </div>
         <div className="text-sm mt-3 xl:mt-5 2xl:mt-7 text-center xl:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
-          <ScrollAnimation delay={200} animateIn="fadeInUp" animateOnce>
+          <ScrollAnimation delay={150} animateIn="fadeInUp" animateOnce>
             <p>私たちは常に面白いコトを考え新しいモノをつくります。</p>
           </ScrollAnimation>
-          <ScrollAnimation delay={300} animateIn="fadeInUp" animateOnce>
+          <ScrollAnimation delay={200} animateIn="fadeInUp" animateOnce>
             <p>マンネリ化した毎日に心地よい刺激を提供し、</p>
           </ScrollAnimation>
-          <ScrollAnimation delay={400} animateIn="fadeInUp" animateOnce>
+          <ScrollAnimation delay={250} animateIn="fadeInUp" animateOnce>
             <p>より豊かな活気のある日々になるよう発信し続けます。</p>
           </ScrollAnimation>
         </div>
       </div>
       <div className="text-center mt-9 mb-22 md:mt-12 md:mb-24 lg:mt-16 lg:mb-42">
-        <ScrollAnimation delay={500} animateIn="fadeInUp" animateOnce>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce>
           <Link href="/about">
             <button
               className="learn-more capitalize text-black bg-white rounded-button text-lg lg:text-3xl py-3.5 lg:py-5 2xl:py-7 px-7 2xl:px-22 lg:px-14 bg-transparent mx-auto"
