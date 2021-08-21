@@ -1,12 +1,12 @@
 import MainLayout from "src/layouts/main";
 import { NextPageLayout } from "src/types";
 import { Tabs } from "antd";
-import PageTab from "@components/tab";
 import React from "react";
 import InformationItem from "@components/banner/information-item";
 import Link from "next/link";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import { NewsList } from "src/static/news";
+import type { News as NewItem} from "src/types/new";
 const { TabPane } = Tabs;
 const News: NextPageLayout = () => {
   return (
@@ -33,14 +33,11 @@ const News: NextPageLayout = () => {
                     <div className="text-base md:text-lg">最新の記事</div>
                   </div>
                   <div className="information-table rounded-table bg-white mt-10">
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
+                    {NewsList.map((item: NewItem, index: number) => {
+                      return (
+                        <InformationItem {...item} key={index} />
+                      );
+                    })}
                   </div>
                   <div className="text-center mt-12 md:mt-14 lg:mt-14 2xl:mt-16">
                     <Link href="/news">
@@ -65,14 +62,11 @@ const News: NextPageLayout = () => {
                     <div className="text-base md:text-lg">最新の記事</div>
                   </div>
                   <div className="information-table rounded-table bg-white mt-10">
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
+                    {NewsList.map((item: NewItem, index: number) => {
+                      return (
+                        <InformationItem {...item} key={index} />
+                      );
+                    })}
                   </div>
                   <div className="text-center mt-12 md:mt-14 lg:mt-14 2xl:mt-16">
                     <Link href="/news">
@@ -97,14 +91,11 @@ const News: NextPageLayout = () => {
                     <div className="text-base md:text-lg">最新の記事</div>
                   </div>
                   <div className="information-table rounded-table bg-white mt-10">
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
-                    <InformationItem />
+                    {NewsList.map((item: NewItem, index: number) => {
+                      return (
+                        <InformationItem {...item} key={index} />
+                      );
+                    })}
                   </div>
                   <div className="text-center mt-12 md:mt-14 lg:mt-14 2xl:mt-16">
                     <Link href="/news">

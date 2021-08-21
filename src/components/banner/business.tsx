@@ -16,7 +16,7 @@ const BusinessBanner: React.FC = () => {
         <div className="mx-auto h-13 bsn-matches"></div>
       </ScrollAnimation>
 
-      <ScrollAnimation animateIn="fadeInRight" delay={400} animateOnce>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce>
         <div className="flex justify-start items-center mb-13">
           <img
             src="/images/business-image-1.png"
@@ -36,7 +36,7 @@ const BusinessBanner: React.FC = () => {
           </div>
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInLeft" delay={700} animateOnce>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce>
         <div className="flex justify-end items-center mb-13">
           <div className="bsn-card" style={{ transform: "translateX(150px)" }}>
             <BusinessCard
