@@ -11,10 +11,10 @@ const BusinessMobileBanner: React.FC = () => {
           business
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInUp" delay={100} animateOnce>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce>
         <div className="mx-auto h-8 mt-3 bsn-matches"></div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInRight" delay={400} animateOnce>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce>
         <div className="business-mobile-item mb-7">
           <div className="w-screen max-w-full">
             <img
@@ -36,7 +36,7 @@ const BusinessMobileBanner: React.FC = () => {
         </div>
       </ScrollAnimation>
 
-      <ScrollAnimation animateIn="fadeInLeft" delay={700} animateOnce>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce>
         <div className="business-mobile-item">
           <div className="w-screen max-w-full">
             <img

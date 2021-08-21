@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import InformationItem from "./information-item";
 import ScrollAnimation from "react-animate-on-scroll";
+import { NewsList } from "src/static/news";
+import { News } from "src/types/new";
 
 const InformationBanner: React.FC = () => {
   return (
@@ -35,15 +37,18 @@ const InformationBanner: React.FC = () => {
         </ScrollAnimation>
 
         <div className="information-table rounded-table bg-white py-4 px-8 lg:px-24">
-          <ScrollAnimation animateIn="fadeInUp" delay={100} animateOnce>
-            <InformationItem />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" delay={200} animateOnce>
-            <InformationItem />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce>
-            <InformationItem isLastItem />
-          </ScrollAnimation>
+          {NewsList.map((item: News, index: number) => {
+            return (
+              <ScrollAnimation
+                animateIn="fadeInUp"
+                delay={100 * (index + 1)}
+                animateOnce
+                key={index}
+              >
+                <InformationItem {...item} isLastItem={index === 2} />
+              </ScrollAnimation>
+            );
+          })}
         </div>
         <div className="text-center mt-12 md:mt-14 lg:mt-14 2xl:mt-16">
           <ScrollAnimation animateIn="fadeInUp" animateOnce>

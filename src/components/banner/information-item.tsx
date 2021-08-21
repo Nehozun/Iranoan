@@ -1,16 +1,17 @@
 import router from "next/router";
+import { News } from "src/types/new";
 
-const InformationItem: React.FC<{ isLastItem?: boolean }> = (props) => {
+const InformationItem: React.FC<News & {isLastItem?: boolean }> = (props) => {
   return (
     <div
       className={
         "cursor-pointer information-item flex flex-wrap items-center justify-between font-notoSans text-secondary text-base gap-x-6 gap-y-3 border-primary py-4 " +
         (props.isLastItem ? "border-none" : "border-b")
       }
-      onClick={() => router.push('/news/1')}
+      onClick={() => router.push(`/news/${props.id}`)}
     >
       <div className="first inline-flex items-center min-w-max gap-3">
-        <span className="time">2021.06.01</span>
+        <span className="time" style={{width: '85px'}}>{props.createdAt}</span>
         <button className="news h-10 w-24 uppercase rounded-lg text-white bg-primary text-center py-2">
           news
         </button>
@@ -20,7 +21,7 @@ const InformationItem: React.FC<{ isLastItem?: boolean }> = (props) => {
         style={{ minWidth: "fit-content" }}
       >
         <div className="text flex-1">
-          座席管理システム「せきとりくん」が北海道建設新聞にて紹介されました
+          {props.title}
         </div>
         <button
           className="border-none bg-transparent outline-none flex-shrink-0 vector-btn"
