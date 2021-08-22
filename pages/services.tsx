@@ -65,6 +65,7 @@ const Services: NextPageLayout = () => {
             <PageTab
               title="Yu-Gi-Oh! Shopping"
               subTitle="遊戯王販売店Nari"
+              link="https://www.iranoan.com"
               content={
                 <>
                   <p>
@@ -98,6 +99,7 @@ const Services: NextPageLayout = () => {
             <PageTab
               title="Mobile App Development"
               subTitle="Team Wanana"
+              link="https://www.iranoan.info/home"
               content={
                 <>
                   <p>
@@ -127,6 +129,7 @@ const Services: NextPageLayout = () => {
             <PageTab
               title="Clothing Fashion"
               subTitle="Ruly"
+              link="https://ruly.theshop.jp"
               content={
                 <>
                   <p>洋服は、ただ単に着るだけのものではありません。</p>

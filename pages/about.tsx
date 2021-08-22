@@ -173,7 +173,6 @@ const About: NextPageLayout = () => {
                       <div>玩具、家電、OA機器等の買い取り及び販売</div>
                       <div>インターネットを利用した通信販売事業</div>
                       <div>アプリケーションの企画、制作及び販売</div>
-                      <div>埼玉県さいたま市大宮区三橋</div>
                       <div>インターネットコンテンツの販売​</div>
                       <div>IT関連事業</div>
                       <div>

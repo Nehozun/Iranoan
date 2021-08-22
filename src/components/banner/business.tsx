@@ -27,10 +27,12 @@ const BusinessBanner: React.FC = () => {
           <div className="bsn-card" style={{ transform: "translateX(-150px)" }}>
             <BusinessCard
               title="遊戯王カード販売"
+              link="https://www.iranoan.com"
               content={
-                <p>
-                  インターネット販売で24h販売可高額買取と豊富な品揃えで安心に購入いただけます。
-                </p>
+                <>
+                  <p>インターネット販売で24h販売可</p>
+                  <p>高額買取と豊富な品揃えで安心に購入いただけます</p>
+                </>
               }
             />
           </div>
@@ -41,6 +43,7 @@ const BusinessBanner: React.FC = () => {
           <div className="bsn-card" style={{ transform: "translateX(150px)" }}>
             <BusinessCard
               title="スマホアプリ開発"
+              link="https://www.iranoan.info/home"
               content={
                 <>
                   <p className="mb-4">
