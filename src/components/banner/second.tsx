@@ -12,28 +12,28 @@ const BannerSecond: React.FC = () => {
         >
           <ScrollAnimation animateIn="bounceInDown" animateOnce duration={0.75}>
             <img
-              src="/svg/01.svg"
+              src="/svg/01-09.png"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="bounceInDown" animateOnce duration={0.75}>
             <img
-              src="/svg/02.svg"
+              src="/svg/01-10.png"
               alt="banner"
               className="absolute top-0 left-0 object-contain "
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="bounceInDown" animateOnce delay={100} duration={0.75}>
             <img
-              src="/svg/03.svg"
+              src="/svg/01-11.png"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="bounceInDown" animateOnce delay={100} duration={0.75}>
             <img
-              src="/svg/04.svg"
+              src="/svg/01-12.png"
               alt="banner"
               className="absolute top-0 left-0 object-contain image-4"
             />
