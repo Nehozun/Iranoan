@@ -10,32 +10,32 @@ const BannerSecond: React.FC = () => {
           className="relative"
           style={{ width: "60vw", maxWidth: "1200px", minWidth: "375px" }}
         >
-          <ScrollAnimation animateIn="bounceInDown" animateOnce duration={0.75}>
+          <ScrollAnimation animateIn="bounceInDown" animateOnce>
             <img
-              src="/svg/01-09.png"
+              src="/svg/Group 2.svg"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="bounceInDown" animateOnce duration={0.75}>
+          <ScrollAnimation animateIn="bounceInDown" animateOnce>
             <img
-              src="/svg/01-10.png"
+              src="/svg/Group 4.svg"
               alt="banner"
-              className="absolute top-0 left-0 object-contain "
+              className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="bounceInDown" animateOnce delay={100} duration={0.75}>
+          <ScrollAnimation animateIn="bounceInDown" delay={100} animateOnce>
             <img
               src="/svg/01-11.png"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="bounceInDown" animateOnce delay={100} duration={0.75}>
+          <ScrollAnimation animateIn="bounceInDown" delay={200} animateOnce>
             <img
-              src="/svg/01-12.png"
+              src="/svg/Group 3.svg"
               alt="banner"
-              className="absolute top-0 left-0 object-contain image-4"
+              className="absolute top-0 left-0 object-contain"
             />
           </ScrollAnimation>
         </div>

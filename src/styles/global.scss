@@ -1,3 +1,5 @@
+// @import './animate.scss';
+
 html,
 body {
   margin: 0;
@@ -138,7 +140,6 @@ body {
   }
 }
 
-
 @media screen and (max-height: 700px) {
   .new-first-banner {
     min-height: 560px;
@@ -269,11 +270,12 @@ hr.contact-hr-mobile {
 }
 
 body .ant-input,
-.ant-textarea {
-  background: #fbfbfb;
-  border: 1px solid #dcdcdc;
-  box-sizing: border-box;
-  border-radius: 8px;
+.ant-textarea,
+.ant-input-number {
+  background: #fbfbfb !important;
+  border: 1px solid #dcdcdc !important;
+  box-sizing: border-box !important;
+  border-radius: 8px !important;
 }
 
 textarea {
@@ -281,7 +283,8 @@ textarea {
   height: 70px;
 }
 
-body .ant-input {
+body .ant-input,
+.ant-input-number {
   height: 42px;
 }
 
@@ -298,27 +301,42 @@ body .ant-input {
 .centered-absolute {
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-@keyframes ttb{
-  0%{opacity:0;top:-200px;}
-  100%{opacity:1;top:0;}
+@keyframes ttb {
+  0% {
+    opacity: 0;
+    top: -200px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
-@keyframes rtl{
-  0%{opacity:0;right:-200px;}
-  100%{opacity:1;right:0;}
+@keyframes rtl {
+  0% {
+    opacity: 0;
+    right: -200px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
 }
 
-@keyframes appear{
-  0%{opacity:0;}
-  100%{opacity:1;}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 .img-3 {
   animation: ttb ease-in-out 1.2s 0.6s;
@@ -342,7 +360,7 @@ body .ant-input {
 }
 
 .text-container {
-  @media screen and (min-width:769px) {
+  @media screen and (min-width: 769px) {
     max-width: calc(100% - 400px);
     &.big-img-container {
       max-width: calc(100% - 500px);
@@ -362,26 +380,30 @@ body .ant-input {
 
 .banner2 {
   min-height: 200px;
-  @media screen and (min-width:1024px) {
+  @media screen and (min-width: 1024px) {
     min-height: 350px;
   }
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     min-height: 450px;
   }
-  @media screen and (min-width:1600px) {
+  @media screen and (min-width: 1600px) {
     min-height: 550px;
   }
-  @media screen and (min-width:1920px) {
+  @media screen and (min-width: 1920px) {
     min-height: 600px;
   }
-  @media screen and (min-width:2560px) {
+  @media screen and (min-width: 2560px) {
     min-height: 650px;
   }
 }
 
 @keyframes vectorToRight {
-  0%{transform: translateX(0px)}
-  100%{transform: translateX(20px)}
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
 }
 
 .information-item:hover {
@@ -394,5 +416,15 @@ body .ant-input {
   a {
     text-decoration: underline;
     color: #1890ff !important;
+  }
+}
+
+.form-item {
+  .ant-input-number {
+    width: 100%;
+    .ant-input-number-input-wrap,
+    input {
+      height: 100%;
+    }
   }
 }
