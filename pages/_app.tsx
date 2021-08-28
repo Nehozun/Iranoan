@@ -34,7 +34,6 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       </>
     </>
   );
-  return;
 }
 
 export default MyApp;
