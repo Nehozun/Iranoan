@@ -8,7 +8,7 @@ const BannerSecond: React.FC = () => {
       <div className="banner2">
         <div
           className="relative"
-          style={{ width: "60vw", maxWidth: "1200px", minWidth: "375px" }}
+          style={{ width: "60vw", maxWidth: "1000px", minWidth: "375px" }}
         >
           <ScrollAnimation animateIn="bounceInDown" animateOnce>
             <img
@@ -41,12 +41,12 @@ const BannerSecond: React.FC = () => {
         </div>
       </div>
       <div className="text-white font-notoSans ">
-        <div className="text-center font-bold text-28px xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl">
+        <div className="text-center font-bold text-28px xl:text-3xl 2xl:text-4xl 3xl:text-5xl">
           <ScrollAnimation delay={100} animateIn="fadeInUp" animateOnce>
             おもしろいことを考える
           </ScrollAnimation>
         </div>
-        <div className="text-sm mt-3 xl:mt-5 2xl:mt-7 text-center xl:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
+        <div className="text-sm mt-3 xl:mt-5 2xl:mt-7 text-center xl:text-base 2xl:text-lg 3xl:text-xl">
           <ScrollAnimation delay={150} animateIn="fadeInUp" animateOnce>
             <p>私たちは常に面白いコトを考え新しいモノをつくります。</p>
           </ScrollAnimation>
