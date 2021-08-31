@@ -91,7 +91,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .new-first-banner {
-    max-height: calc(100vh - 128px);
+    max-height: 600px !important
   }
   .banner-right {
     min-width: 375px;
@@ -109,21 +109,22 @@ body {
   .new-first-banner {
     max-width: unset;
     padding: 0 12% !important;
-    min-height: 1000px;
+    // min-height: 920px;
+    max-height: 720px;
   }
 
   .new-first-banner .banner-right > img {
-    transform: scale(1.5);
+    // transform: scale(1.15);
   }
 
   .new-first-banner .banner-left .last {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 2.25rem;
   }
 
   .new-first-banner .banner-left {
-    font-size: 4rem;
-    line-height: 4.25rem;
+    font-size: 3rem;
+    line-height: 3.25rem;
   }
 }
 
