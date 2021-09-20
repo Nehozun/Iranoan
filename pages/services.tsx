@@ -80,11 +80,12 @@ const Services: NextPageLayout = () => {
           <div className="my-5 md:my-32" ref={tabRef4}>
             <PageTab
               isNew
-              title="Gacha24"
-              subTitle="オンラインでトレーディングカードのガチャが引けるサービスです。"
+              title="Online Gacha"
+              subTitle="Gacha24"
               link="https://www.iranoan.com"
               content={
                 <>
+                 <p>オンラインでトレーディングカードのガチャが引けるサービスです。</p>
                   <p>通常のオリパを開封する時のような期待感はそのままに、</p>
                   <p>
                     商品が家に届くのを待たず当たった商品をすぐご確認いただけます。
