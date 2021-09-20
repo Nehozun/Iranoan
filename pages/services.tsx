@@ -5,18 +5,26 @@ import { NextPageLayout } from "src/types";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Services: NextPageLayout = () => {
-  const [currentTab, setCurrentTab] = useState(1);
+  const [currentTab, setCurrentTab] = useState(4);
   const tabRef1 = useRef<any>();
   const tabRef2 = useRef<any>();
   const tabRef3 = useRef<any>();
+  const tabRef4 = useRef<any>();
   const onChangeTab = (value: number) => {
     setCurrentTab(value);
-    if (value === 1) {
-      tabRef1.current?.scrollIntoView();
-    } else if (value === 2) {
-      tabRef2.current?.scrollIntoView();
-    } else {
-      tabRef3.current?.scrollIntoView();
+    switch (value) {
+      case 1:
+        tabRef1.current?.scrollIntoView();
+        break;
+      case 2:
+        tabRef2.current?.scrollIntoView();
+        break;
+      case 3:
+        tabRef3.current?.scrollIntoView();
+        break;
+      case 4:
+        tabRef4.current?.scrollIntoView();
+        break;
     }
   };
   return (
@@ -33,6 +41,14 @@ const Services: NextPageLayout = () => {
       <div className="services-tabs mt-9 md:mt-13">
         <ScrollAnimation animateIn="fadeInUp" animateOnce delay={200}>
           <div className="ira-tabs inline-flex flex-nowrap gap-x-5">
+            <button
+              className={
+                "ira-tab " + (currentTab === 4 ? "ira-tab-active" : "")
+              }
+              onClick={() => onChangeTab(4)}
+            >
+              Gacha24
+            </button>
             <button
               className={
                 "ira-tab " + (currentTab === 1 ? "ira-tab-active" : "")
@@ -57,6 +73,30 @@ const Services: NextPageLayout = () => {
             >
               CLOTHING FASHION
             </button>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="fadeInUp" animateOnce>
+          <div className="my-5 md:my-32" ref={tabRef4}>
+            <PageTab
+              isNew
+              title="Gacha24"
+              subTitle="オンラインでトレーディングカードのガチャが引けるサービスです。"
+              link="https://www.iranoan.com"
+              content={
+                <>
+                  <p>通常のオリパを開封する時のような期待感はそのままに、</p>
+                  <p>
+                    商品が家に届くのを待たず当たった商品をすぐご確認いただけます。
+                  </p>
+                  <p>
+                    種類は豊富で、なかなかお目にかかることの出来ないような高額カードも多数。
+                  </p>
+                  <p>ぜひ当社ネットガチャでワクワクを感じてみてください。</p>
+                </>
+              }
+              imageUrl="/images/gacha.png"
+            />
           </div>
         </ScrollAnimation>
 

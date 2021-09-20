@@ -91,7 +91,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .new-first-banner {
-    max-height: 600px !important
+    max-height: 600px !important;
   }
   .banner-right {
     min-width: 375px;
@@ -426,6 +426,19 @@ body .ant-input,
     .ant-input-number-input-wrap,
     input {
       height: 100%;
+    }
+  }
+}
+
+.services-tabs {
+  @media screen and (max-width: 500px) {
+    .ira-tabs {
+      flex-wrap: wrap !important;
+      row-gap: 1rem !important;
+      justify-content: center;
+      .ira-tab {
+        max-width: 200px;
+      }
     }
   }
 }
