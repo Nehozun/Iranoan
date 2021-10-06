@@ -82,7 +82,7 @@ const Services: NextPageLayout = () => {
               isNew
               title="Online Gacha"
               subTitle="Gacha24"
-              link="https://www.iranoan.com"
+              link="https://wanana.iranoan.com"
               content={
                 <>
                  <p>オンラインでトレーディングカードのガチャが引けるサービスです。</p>
