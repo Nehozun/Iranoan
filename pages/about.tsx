@@ -162,7 +162,7 @@ const About: NextPageLayout = () => {
                   </div>
                   <div className="overview-item flex items-start justify-between py-3.5 border-b border-overview gap-x-5 md:gap-x-10">
                     <div className="left text-secondary">従業員数</div>
-                    <div className="right flex-1">6名</div>
+                    <div className="right flex-1">10名</div>
                   </div>
                 </div>
                 <div className="block-1 flex-1">
