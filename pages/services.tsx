@@ -81,7 +81,7 @@ const Services: NextPageLayout = () => {
             <PageTab
               isNew
               title="Online Gacha"
-              subTitle="Gacha24"
+              subTitle="Gacha24(特許出願中)"
               link="https://wanana.iranoan.com"
               content={
                 <>
