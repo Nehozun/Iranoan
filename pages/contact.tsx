@@ -192,8 +192,9 @@ const Contact: NextPageLayout = () => {
             className="mx-auto w-full"
             style={{ fontSize: "15px", color: "#666666", maxWidth: '284px', transform: 'translateX(15px)' }}
           >
-            <p>送信が完了しました！</p>
-            <p>返答まで2~3日要する場合がございます。</p>
+            <p>お問い合わせありがとうございました。</p>
+            <p>2~3日以内にご返答いたしますので
+ご返答までしばらくお待ちください。</p>
           </div>
         ) : null}
       </Form>
