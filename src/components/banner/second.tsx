@@ -10,34 +10,26 @@ const BannerSecond: React.FC = () => {
           className="relative"
           style={{ width: "60vw", maxWidth: "1000px", minWidth: "375px" }}
         >
-          <ScrollAnimation animateIn="bounceInDown" animateOnce>
             <img
               src="/svg/Group 2.svg"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="bounceInDown" animateOnce>
             <img
               src="/svg/Group 4.svg"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="bounceInDown" delay={100} animateOnce>
             <img
               src="/svg/01-11.png"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="bounceInDown" delay={200} animateOnce>
             <img
               src="/svg/Group 3.svg"
               alt="banner"
               className="absolute top-0 left-0 object-contain"
             />
-          </ScrollAnimation>
         </div>
       </div>
       <div className="text-white font-notoSans ">
